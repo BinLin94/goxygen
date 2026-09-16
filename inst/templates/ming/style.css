@@ -270,3 +270,14 @@ ul {
   margin: 0;
 }
 
+/* Bibliography: hanging indent for CSL entries. Pandoc emits the
+   csl-bib-body/csl-entry classes but its own template's CSS for them is
+   not used here, so add the hanging indent explicitly. */
+.csl-entry {
+  margin-bottom: 0.6em;
+}
+.hanging-indent div.csl-entry {
+  margin-left: 2em;
+  text-indent: -2em;
+}
+
